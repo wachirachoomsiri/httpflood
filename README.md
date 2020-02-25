@@ -1,4 +1,4 @@
-# Golang-httpflood ![](https://img.shields.io/badge/Version-1.7-brightgreen.svg) ![](https://img.shields.io/badge/license-MIT-blue.svg)
+# Golang-httpflood COPPY FROM https://github.com/Leeon123/golang-httpflood.git ![](https://img.shields.io/badge/Version-1.7-brightgreen.svg) ![](https://img.shields.io/badge/license-MIT-blue.svg)
 Using Golang(net/socket) to httpflood
 
 **Warning: Please use command "ulimit -n 999999" before use this in linux**
@@ -45,7 +45,7 @@ Base: https://github.com/Leeon123/Golang_CC_Base
 
 Then:
 
-    git clone https://github.com/Leeon123/golang-httpflood.git
+    git clone https://github.com/wachirachoomsiri/httpflood.git
 
 Header.txt format:
 
